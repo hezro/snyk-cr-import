@@ -16,7 +16,10 @@ const base_url = "https://api.snyk.io/api/v1"
 
 // Define flags for the utility.
 var (
-  snyk_token = kingpin.Flag("token", "Snyk API Token").Required().String() cr_integration_id = kingpin.Flag("crId", "Container Registry ID").Required().String() org_id = kingpin.Flag("orgId", "Snyk Target Organization ID").Required().String() image_name = kingpin.Flag("imageName", "Name of the container image including the tag: hezro/juice-shop:1.1.0").Required().String()
+  snyk_token = kingpin.Flag("token", "Snyk API Token").Required().String() 
+  cr_integration_id = kingpin.Flag("crId", "Container Registry ID").Required().String() 
+  org_id = kingpin.Flag("orgId", "Snyk Target Organization ID").Required().String() 
+  image_name = kingpin.Flag("imageName", "Name of the container image including the tag: hezro/juice-shop:1.1.0").Required().String()
 )
 
 // Define the structs for the json fields.
