@@ -23,3 +23,11 @@ How to import a container:
 ```bash
 snyk-cr-import --token=<Snyk Token> --crId=<container registry integration id> --orgId=<organization id> --imagehName=<image name and tag>
 ```
+
+Use the args files to pass in the Snyk Token:
+```bash
+echo --token=<snyk token> > args
+```
+```bash
+snyk-cr-import @args --crId=<container registry integration id> --orgId=<organization id> --imagehName=<image name and tag>
+```
