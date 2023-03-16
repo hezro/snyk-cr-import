@@ -1,7 +1,7 @@
 # snyk-cr-import
 
 ## Description:
-Import container images into Snyk from your Container Registry. (ACR, ECR, Articatory)
+Import container images into Snyk from your Container Registry. (ACR, ECR, Artifactory)
 
 # Usage
 By default the whole repo will be imported if the `file_path` flag is not specified.
